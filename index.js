@@ -83,6 +83,7 @@ box.forEach((item, i) => {
             if (winPlayer2.length == 3) {
               winObj.text = "Player 2 win!";
               winBox.classList.add("show");
+              allItem = [];
             }
           };
 
@@ -96,6 +97,7 @@ box.forEach((item, i) => {
             if (winPlayer1.length == 3) {
               winObj.text = "Player 1 win!";
               winBox.classList.add("show");
+              allItem = [];
             }
           }
 
@@ -141,7 +143,6 @@ box.forEach((item, i) => {
 
 //TODO - restart button click
 function restart() {
-  allItem = [];
   let restart = document.querySelector(".win-title button");
   restart.onclick = (e) => {
     box.forEach((item) => {
